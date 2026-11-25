@@ -20,20 +20,33 @@
       <div class="grid" id="grid"></div>
     </section>
 
-    <p class="hint">Cada sobre solo se abre el día que le corresponde.</p>
+    <p class="hint">Cada sobre solo se abre el día que le corresponde. Para probar: index.html?fecha=2026-12-05</p>
     <button type="button" class="reiniciar" id="reiniciar">Reiniciar sobres abiertos</button>
   </main>
 
   <div class="modal" id="modal" hidden>
+    <div class="escena" id="escena" hidden>
+      <div class="sobre">
+        <div class="sobre-fondo"></div>
+        <div class="papel"></div>
+        <div class="sobre-frente"></div>
+        <div class="solapa"></div>
+        <div class="sello">&hearts;</div>
+      </div>
+      <p class="toca">Toca para leer &hearts;</p>
+    </div>
+
     <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
       <button class="cerrar" id="cerrar" aria-label="Cerrar">&times;</button>
       <div class="modal-icono" id="modal-icono"></div>
       <div class="modal-num" id="modal-num"></div>
       <h2 id="modal-titulo"></h2>
       <p id="modal-texto"></p>
+      <div id="extra" class="extra"></div>
     </div>
   </div>
 
+  <script src="juegos.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
