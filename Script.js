@@ -24,7 +24,7 @@
 
   // false: modo "llenado de sobres" (todos se pueden abrir para revisarlos)
   // true: cada sobre solo se abre el día que le corresponde (ponlo en true al entregarlo)
-  const BLOQUEO_ACTIVO = false;
+  const BLOQUEO_ACTIVO = true;
 
   const DIAS_SEMANA = ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"];
   const NOMBRES_DIA = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
